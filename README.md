@@ -1,14 +1,14 @@
 # solveSudoku
 MATLAB Application for Solving Sudoku Puzzles of any Size
 
-Input:  2-dimensional array of integers with 0's for unknown tiles
+##### Input and Output
+Input: 2-dimensional array of integers with 0's for unknown tiles
 
-Output: a 2-dimensional array of integers representing the solved sudoku
+Output:a 2-dimensional array of integers representing the solved sudoku
         puzzle and the time taken to solve the puzzle. Also prints
         recursive depth to the console.
 
-Algorithm:
-
+##### Algorithm:
   1. Initialize 2-dimensional array with known values in known tiles and
     an array of possible numbers in unknown tiles
   2. Eliminate any possible numbers according to Sudoku rules
@@ -16,8 +16,7 @@ Algorithm:
   4. Tentatively guess a possible number for an unknown cell
   5. Repeat steps 2-5 until a solution is found or shown impossible
 
-Example:
-
+#### Example:
 unsolvedPuzzle =
 
 [5 0 3 8 1 9 0 2 0; 8 1 0 4 0 0 3 9 5; 0 4 2 0 0 0 7 8 1;
@@ -29,7 +28,7 @@ unsolvedPuzzle =
 
 [S, t] = solveSudoku(unsolvedPuzzle)
 
-
+ 
 S = 
 
     5     7     3     8     1     9     6     2     4
